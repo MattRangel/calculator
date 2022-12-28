@@ -1,0 +1,45 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: khaki;
+}
+
+.button {
+	background-color: darkseagreen;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid black;
+}
+
+#calc-body {
+	height: 80%;
+	max-width: 90%;
+	aspect-ratio: 4/6;
+}
+
+#screen {
+	background-color: darkolivegreen;
+	height: 20%;
+	border: 4px solid black;
+	border-bottom: none;
+}
+
+#buttons {
+	display: grid;
+	grid-template-areas:
+		"add sub mult div"
+		"seven eight nine enter"
+		"four five six enter"
+		"one two three clr"
+		"zero zero dot clr";
+	height: 80%;
+	border: 2px solid black;
+}
