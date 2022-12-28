@@ -5,6 +5,8 @@ function createButtons() {
 		button.innerText = buttonNames[i][0];
 		button.style.gridArea = buttonNames[i][1];
 		button.classList.add("button");
+		button.addEventListener('mousedown', (event) => event.target.classList.add("clicked"));
+		button.addEventListener('mouseup', (event) => event.target.classList.remove("clicked"));
 		document.querySelector("#buttons").appendChild(button);
 	}
 }
